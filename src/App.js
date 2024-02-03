@@ -79,6 +79,8 @@ function App() {
          <Dropdown name='City' options={cities} OnSelect={handleSelect} />
         }
       </div>
+
+      {userSelect.City?<div> <b>You selected {userSelect.City}</b>, {userSelect.State}, {userSelect.Country}</div>:null}
        
     </div>
   );
